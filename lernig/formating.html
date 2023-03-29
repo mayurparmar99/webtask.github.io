@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Formatting Tags</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        color: #333333;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        line-height: 1.5;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+      }
+      #a1 {
+        padding: 12px;
+        border: 3px solid black;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #a5d2d873;
+      }
+
+      b {
+        font-weight: bold;
+      }
+
+      i {
+        font-style: italic;
+      }
+
+      u {
+        text-decoration: underline;
+      }
+
+      strike {
+        text-decoration: line-through;
+      }
+
+      sup {
+        vertical-align: super;
+        font-size: 80%;
+      }
+
+      sub {
+        vertical-align: sub;
+        font-size: 80%;
+      }
+
+      em {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      small {
+        font-size: 80%;
+      }
+
+      big {
+        font-size: 120%;
+      }
+	  h3{
+		text-shadow:1px 1px  rgb(33, 29, 29);
+	  }
+	  
+	  .a1{
+		border:none transparent;
+    outline: none;
+	  }
+    </style>
+
+    <script>
+        function f1()
+      {
+        for (var j=1;j<=10;j++)
+        {
+        a=document.getElementById(j).value;
+        document.getElementById(j+10).innerHTML=a;
+        }
+      }
+      </script>
+
+  </head>
+
+  <body>
+
+    <h1>HTML Formatting Tags</h1>
+    <div id="a1">
+      <u>
+        <h3>BOLD TAG :-</h3>
+      </u>
+        <p>&lt;b&gt;<input type="text" class="a1" id="1" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>&lt;/b&gt;</p>
+          <u><h3>OUTPUT :-</h3></u>
+            <b>
+              <p id="11">This text will be bold</p>
+            </b>
+    </div>
+
+    <div id="a1">
+      <u>
+        <h3>ITALIC TAG :-</h3>
+      </u>
+        <p>&lt;i&gt;
+          <input type="text" class="a1" id="2" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+        &lt;/i&gt;</p>
+          <u><h3>OUTPUT :-</h3></u>
+            <i>
+              <p id="12">This text will be Italic</p>
+            </i>
+    </div>
+    
+    <div id="a1">
+      <u>
+        <h3>UNDERLINE TAG :-</h3>
+      </u>
+        <p>&lt;u&gt;
+          <input type="text" class="a1" id="3" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+        &lt;/u&gt;</p>
+          <u><h3>OUTPUT :-</h3></u>
+            <u>
+              <p id="13">This text will be underline</p>
+            </u>
+    </div>
+
+    <div id="a1">
+      <u>
+        <h3>STRIKE TAG :-</h3>
+      </u>
+        <p>&lt;strike&gt;
+          <input type="text" class="a1" id="4" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+        &lt;/strike&gt;</p>
+          <u><h3>OUTPUT :-</h3></u>
+            <strike>
+              <p id="14">This text will be underline</p>
+            </strike>
+    </div>
+    
+    <div id="a1">
+      <u>
+        <h3>SUPERSCRIPT TAG :-</h3>
+      </u>
+        <p>&lt;sup&gt;
+          <input type="text" class="a1" id="5" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+        &lt;/sup&gt;</p>
+          <u><h3>OUTPUT :-</h3></u>
+          <p>E=(x+y)<sup id="15">2</sup></p>
+      </div>
+
+      <div id="a1">
+        <u>
+          <h3>SUBSCRIPT TAG :-</h3>
+        </u>
+          <p>&lt;sub&gt;
+            <input type="text" class="a1" id="6" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+          &lt;/sub&gt;</p>
+            <u><h3>OUTPUT :-</h3></u>
+            <p>H<sub id="16">2</sub>O</p>
+        </div>
+
+        <div id="a1">
+          <u>
+            <h3>EMPHASIZED TAG :-</h3>
+          </u>
+            <p>&lt;em&gt;
+              <input type="text" class="a1" id="7" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+            &lt;/em&gt;</p>
+              <u><h3>OUTPUT :-</h3></u>
+                <em>
+                  <p id="17">This text will be emphasized and bold</p>
+                </em>
+        </div>
+
+        <div id="a1">
+          <u>
+            <h3>STRONG TAG :-</h3>
+          </u>
+            <p>&lt;strong&gt;
+              <input type="text" class="a1" id="8" oninput="f1()" placeholder="YOU CAN TYPE HERE"></input>
+            &lt;/strong&gt;</p>
+              <u><h3>OUTPUT :-</h3></u>
+                <strong>
+                  <p id="18">This text will be strong</p>
+                </strong>
+        </div>
+    <p><small>This text will be smaller</small></p>
+    <p><big>This text will be bigger</big></p>
+  </body>
+</html>

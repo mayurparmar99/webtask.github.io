@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Learning Platform</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.container {
+			max-width: 900px;
+			
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.course {
+			flex-basis: calc(33.33% - 20px);
+			margin: 10px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			transition: box-shadow 0.3s ease-in-out;
+			cursor: pointer;
+		}
+
+		.course:hover {
+			box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+		}
+
+		.course img {
+			width: 100%;
+			height: 55%;
+		}
+
+		.course h3 {
+			font-size: 24px;
+			font-weight: bold;
+			margin: 10px;
+			text-align: center;
+		}
+
+		.course p {
+			font-size: 16px;
+			margin: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		Online Learning Platform
+	</header>
+
+	<div class="container" >
+		<div class="course" id="html">
+			<img src="html.png"  alt="Course 1" >
+			<h3>Introduction to HTML and CSS</h3>
+			<p>Learn the basics of web design and create your own website</p>
+			
+		</div>
+		<div class="course" id="java">
+		<img src="java.png" alt="Course 2"><link rel="stylesheet" href="javalern.html"></img>
+			<h3>Introduction to JavaScript</h3>
+			<p>Learn how to add interactivity to your website with JavaScript</p>
+		</div>
+
+		<div class="course">
+			<img src="Payton.jpg" alt="Course 3">
+			<h3>Introduction to Python</h3>
+			<p>Learn the basics of Python programming language and start building your own applications</p>
+		</div>
+
+		<div class="course">
+			<img src="machin.jpg" alt="Course 4">
+			<h3>Introduction to Machine Learning</h3>
+			<p>Learn the basics of machine learning and start building predictive models</p>
+		</div>
+
+		<div class="course">
+			<img src="bussnus.jpg" alt="Course 5">
+			<h3>Introduction to Business Management</h3>
+			<p>Learn how to manage your own business and develop your leadership skills</p>
+		</div>
+
+		<div class="course">
+			<img src="grafic.jpg" alt="Course 6">
+			<h3>Introduction to Graphic Design</h3>
+			<p>Learn the basics of graphic design and create your own logos, posters, and other visuals</p>
+		</div>
+	</div>
+
+	<script>
+
+
+const htmlButton = document.getElementById("html");
+const javaButton = document.getElementById("java");
+
+htmlButton.addEventListener("click", function() {
+    window.location.href = "htmlcourse.html";
+});
+
+javaButton.addEventListener("click", function() {
+    window.location.href="javalern.html";
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
